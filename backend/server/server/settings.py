@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    'apps.endpoints',  # app
+    # app
+    'apps.endpoints',
+    'apps.ml',
     'rest_framework',  # django rest framework
 ]
 
