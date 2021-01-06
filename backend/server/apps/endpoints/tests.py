@@ -8,19 +8,19 @@ class EndpointTests(TestCase):
     def test_predict_view(self):
         client = APIClient()
         input_data = {
-            "age": 37,
+            "age": 36,
             "workclass": "Private",
-            "fnlwgt": 34146,
+            "fnlwgt": 123011,
             "education": "HS-grad",
-            "education-num": 9,
+            "education-num": 9.0,
             "marital-status": "Married-civ-spouse",
-            "occupation": "Craft-repair",
+            "occupation": "Exec-managerial",
             "relationship": "Husband",
             "race": "White",
             "sex": "Male",
-            "capital-gain": 0,
-            "capital-loss": 0,
-            "hours-per-week": 68,
+            "capital-gain": 0.0,
+            "capital-loss": 0.0,
+            "hours-per-week": 40.0,
             "native-country": "United-States"
         }
         classifier_url = "/api/v1/income_classifier/predict"
